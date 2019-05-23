@@ -10,7 +10,7 @@ app.get('/', (request, response) => {
     let r = fibonacci(n);
     console.log("Fibonacci for number " + n + " is " + r);
     response.send({ number:n, result:r });
-  } catch (Error e) {
+  } catch (e) {
     console.error(e);
     response.send({ error:e });
   }
