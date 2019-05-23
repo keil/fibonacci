@@ -12,5 +12,5 @@ app.get('/', (request, response) => {
   response.send({ number:n, result:r });
 })
 
-let PORT = 1235;
+let PORT = process.env.PORT || 1235;
 app.listen(PORT, () => console.log(`Fibonacci service is listening on port ${PORT}`))
