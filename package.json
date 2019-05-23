@@ -1,0 +1,22 @@
+{
+  "name": "fibonacci",
+  "version": "1.0.0",
+  "description": "Fibonacci Cloud App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keil/fibonacci.git"
+  },
+  "author": "Matthias Keil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keil/fibonacci/issues"
+  },
+  "homepage": "https://github.com/keil/fibonacci#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
