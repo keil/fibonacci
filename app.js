@@ -6,10 +6,13 @@ app.get('/', (request, response) => {
   let n = request.query.n;
   console.log("Calculate Fibonacci number for input " + n);
 
-  let r = fibonacci(n);
-  console.log("Fibonacci for number " + n + " is " + r);
-
-  response.send({ number:n, result:r });
+  try {
+    let r = fibonacci(n);
+    console.log("Fibonacci for number " + n + " is " + r);
+    response.send({ number:n, result:r });
+  } catch (Error e) {
+    response.send({ error:e });
+  }
 })
 
 let PORT = process.env.PORT || 1235;
