@@ -9,8 +9,7 @@ let fibonacci = (function() {
   }
 
   let calculate = function(n) {
-    if(typeof n != 'number') throw new Error("Invalid Input: Not a value of type number.");
-    if(n<0) throw new Error("Invalid Input: Not a value greater or equals 0.");
+    if(!(n>=0)) throw new Error("Invalid Input: Not a value greater or equals 0.");
     if(!map.has(n)) map.set(n, fibonacci(n));
     return map.get(n);
   }
